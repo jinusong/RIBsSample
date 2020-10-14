@@ -1,21 +1,11 @@
 package com.jinusong.RIBsSample.root
 
-import androidx.compose.foundation.Text
-import androidx.compose.runtime.Composable
-import androidx.ui.tooling.preview.Preview
+import android.content.Context
+import android.util.AttributeSet
+import android.widget.FrameLayout
 
-
-@Composable
-fun RootView() {
-    Text(text = "Hello")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    RootView()
-}
-
-class RootPresenter: RootInteractor.RootPresenter {
-
-}
+class RootView @JvmOverloads constructor(
+    context: Context,
+    attr: AttributeSet? = null,
+    defStyleAttr: Int = 0
+): FrameLayout(context, attr, defStyleAttr), RootInteractor.RootPresenter

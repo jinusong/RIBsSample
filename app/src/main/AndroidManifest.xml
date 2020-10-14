@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jinusong.ribssample">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.jinusong.RIBsSample.App"
         android:allowBackup="true"
@@ -11,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RIBsSample">
         <activity
-            android:name=".MainActivity"
+            android:name=".RootActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.RIBsSample.NoActionBar">
             <intent-filter>
